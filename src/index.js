@@ -1,4 +1,7 @@
 import "dotenv/config.js"
 import client from "./client.js";
-client.once('ready', () => console.log('ok'))
+import './events/ready.js'
+import './handlers/handler.events.js'
+import './services/discloud/index.js'
+
 client.login()

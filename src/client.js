@@ -1,6 +1,6 @@
 //import("./functions/Date/Date.prototypes.js")
-process.env.TZ = "America/Sao_Paulo"
 //import { discloud } from'./discloud/discloud.js'
+process.env.TZ = "America/Sao_Paulo"
 import { Client, Collection, GatewayIntentBits } from 'discord.js'
 
 const options = {
@@ -19,16 +19,14 @@ const options = {
         GatewayIntentBits.MessageContent
     ]
 };
-
 class Lesath extends Client {
+    /**@type {Collection <string, any>} */
     slashCommands = new Collection()
     interactions = 0
     constructor() {
         super(options)
     }
 }
-
-
 
 const client = new Lesath()
 export default client
