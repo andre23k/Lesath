@@ -9,11 +9,10 @@ import { discloud } from "discloud.app"
     
     return setTimeout(() => reload(), timeRemaing)
 }
-
 async function reload() {
     await discloud.apps.restart('all')
     .then(() => {})
     .catch(() => {})
     return
 }
-module.exports =  calculateReload
+export default calculateReload
