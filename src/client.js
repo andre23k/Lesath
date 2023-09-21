@@ -1,4 +1,4 @@
-//import("./functions/Date/Date.prototypes.js")
+import"./structures/Date.prototypes.js"
 //import { discloud } from'./discloud/discloud.js'
 process.env.TZ = "America/Sao_Paulo"
 import { Client, Collection, GatewayIntentBits } from 'discord.js'
