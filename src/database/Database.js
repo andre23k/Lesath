@@ -27,4 +27,7 @@ export default new class Database extends Models {
         return;
     }
 
+    async deleteGuild(guildId) {
+        await this.Guild.deleteMany({ id: guildId })
+    }
 }
