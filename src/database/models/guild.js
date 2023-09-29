@@ -4,7 +4,7 @@ const { Schema, model } = Mongoose
 export default model('Guild', new Schema({
     id: { type: String, unique: true },
     LogSystem: {
-        messagens: {
+        messages: {
             active: Boolean,
             channel: String,
             webhookurl: String
